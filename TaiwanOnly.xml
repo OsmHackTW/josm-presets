@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets
+  xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="OSM.tw"
+  version="34(2016-01-11)"
+  description="Some presets only use in Taiwan region"
+  zh_TW.description="一些只有臺灣才有的預設組合"
+  shortdescription="Taiwan Only"
+  link="https://josm.openstreetmap.de/wiki/Presets/TaiwanOnly"
+  baselanguage="zh_TW">
+
+<!--Some notes-->
+  <!--Special Thanks!!!
+  Many thanks to people who edit and discuss together on the hackpad:
+  https://osmhackpad.com/tag-RmL5fQsiMGp
+  -->
+  <!--Presets Reference
+  1."taiwan_chain_store" from osm.tw/mcdlee
+    source url:https://github.com/OsmHackTW/taiwan_chain_store
+  -->
+
+<!--Templates-->
+  <!--Templates
+  <item name="" icon="" type="closedway" preset_name_label="true">
+    <key key="" value="" />
+  </item>
+  -->
+  <!--not finished yet-->
+
+<!--=====chunks=====-->
+  <chunk id="addr">
+    <key key="addr:country" value="TW" />
+    <text key="addr:postcode" text="郵遞區號" />
+    <label text="底部有中華郵政3+2郵遞區號查詢頁面連結" />
+    <text key="addr:full" text="地址" />
+    <label text="請填入完整中文地址，國家免填。" />
+    <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
+  </chunk >
+  <chunk id="addr_detail">
+    <!--addr ref:
+    https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D
+    -->
+    <label text="請填入地址，有疑問請參照底部OSM Wiki連結。" icon="styles/standard/service/post_office.png" />
+    <text key="addr:postcode" text="郵遞區號" />
+    <label text="(底部有中華郵政3+2郵遞區號查詢頁面連結)" />
+    <key key="addr:country" value="TW" />
+    <combo key="addr:state" text="縣、(直轄)市" values_searchable="true">
+      <list_entry value="基隆市" display_value="基隆市" />
+      <list_entry value="臺北市" display_value="臺北市" />
+      <list_entry value="新北市" display_value="新北市" />
+      <list_entry value="桃園縣" display_value="桃園縣" />
+      <list_entry value="新竹市" display_value="新竹市" />
+      <list_entry value="新竹縣" display_value="新竹縣" />
+      <list_entry value="苗栗縣" display_value="苗栗縣" />
+      <list_entry value="臺中市" display_value="臺中市" />
+      <list_entry value="彰化縣" display_value="彰化縣" />
+      <list_entry value="南投縣" display_value="南投縣" />
+      <list_entry value="雲林縣" display_value="雲林縣" />
+      <list_entry value="嘉義市" display_value="嘉義市" />
+      <list_entry value="嘉義縣" display_value="嘉義縣" />
+      <list_entry value="臺南市" display_value="臺南市" />
+      <list_entry value="高雄市" display_value="高雄市" />
+      <list_entry value="屏東縣" display_value="屏東縣" />
+      <list_entry value="宜蘭縣" display_value="宜蘭縣" />
+      <list_entry value="花蓮縣" display_value="花蓮縣" />
+      <list_entry value="臺東縣" display_value="臺東縣" />
+      <list_entry value="澎湖縣" display_value="澎湖縣" />
+      <list_entry value="金門縣" display_value="金門縣" />
+      <list_entry value="連江縣" display_value="連江縣" />
+    </combo>
+    <text key="addr:district" text="區" />
+    <text key="addr:city" text="鄉、鎮、市" />
+    <text key="addr:place" text="村、里" />
+    <text key="addr:hamlet" text="比村小的地名" />
+    <text key="addr:street" text="街道巷弄" />
+    <label text="號、棟、樓與室僅填數字或英文。" />
+    <text key="addr:housenumber" text="號(例:34-5)" />
+    <text key="addr:unit" text="棟(例:B)" />
+    <text key="addr:floor" text="樓(例:22)" />
+    <text key="addr:door" text="室(例:307A)" />
+    <text key="name" text="屋名(例:柯寓)" />
+    <space/>
+    <label text="或輸入完整地址" icon="styles/standard/service/post_office.png" />
+    <text key="addr:full" text="地址" />
+    <space/>
+    <link href="https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D" />
+    <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
+  </chunk >
+  <chunk id="contact">
+    <text key="phone" text="電話號碼" />
+    <label text="市話格式以02-3456-7890為例：+886234567890；手機格式以09-8765-4321為例：+886987654321" />
+    <text key="fax" text="傳真" />
+    <text key="website" text="網站" />
+    <text key="email" text="Email" />
+  </chunk >
+  <chunk id="wheelchair">
+    <combo key="wheelchair" text="Wheelchair" values="yes,limited,no,designated" editable="false" />
+    <text key="wheelchair:description:zh-tw" text="無障礙受限描述" />
+  </chunk >
+  <chunk id="atm">
+    <!--This one is for loactions where atm is avalible there!-->
+    <combo key="atm" text="ATM" values="yes,no" editable="false" />
+  </chunk >
+  <chunk id="open_hours">
+    <text key="opening_hours" text="營業時間" />
+  </chunk>
+  <chunk id="internet">
+    <!-- link:https://wiki.openstreetmap.org/wiki/Key:internet_access-->
+    <combo key="internet_access" text="網路" values="yes,no,wlan,wired,terminal,service"/>
+    <combo key="internet_access:fee" text="費用" values="yes,no"/>
+    <combo key="internet_access:fee" text="費用" values="yes,no"/>
+    <text key="internet_access:ssid" text="網路名稱(SSID)"/>
+    <text key="internet_access:operator" text="營運商"/>
+  </chunk>
+
+  <!-- chunks made for particular sets -->
+  <chunk id="convenience">
+    <key key="shop" value="convenience" />
+    <text key="name" text="店名" />
+    <reference ref="addr" />
+    <reference ref="wheelchair" />
+    <reference ref="atm" />
+    <reference ref="open_hours" />
+  </chunk >
+  <chunk id="supermarket">
+    <key key="shop" value="supermarket" />
+    <text key="name" text="店名" />
+    <reference ref="addr" />
+    <reference ref="wheelchair" />
+    <reference ref="atm" />
+    <reference ref="open_hours" />
+  </chunk >
+  <chunk id="fuel_station">
+    <key key="amenity" value="fuel" />
+    <text key="name" text="站名" />
+    <!--https://wiki.openstreetmap.org/wiki/Key:fuel-->
+    <checkgroup columns="3">
+      <check key="fuel:diesel" text="超級柴油" default="on" />
+      <check key="fuel:biodiesel" text="生質柴油" />
+      <check key="fuel:octane_92" text="92無鉛" default="on" />
+      <check key="fuel:octane_95" text="95無鉛" default="on" />
+      <check key="fuel:octane_98" text="98無鉛" default="on" />
+    </checkgroup>
+    <text key="opening_hours" text="Opening Hours" default="24/7" />
+    <reference ref="addr" />
+  </chunk>
+  <chunk id="tel_com">
+    <key key="office" value="telecommunication"/>
+    <key key="function" value="retail"/>
+    <link href="https://wiki.openstreetmap.org/wiki/Tag:office%3Dtelecommunication"/>
+    <reference ref="open_hours" />
+  </chunk>
+  <chunk id="shop">
+    <text text="店名" key="name"/>
+    <reference ref="open_hours" />
+  </chunk>
+
+<!--=====Groups=====-->
+  <!--This is a test area for new items
+
+  -->
+  <separator/>
+  <group name="非商家">
+    <item name="獨棟透天厝" type="closedway" preset_name_label="true">
+      <key key="building" value="house" />
+      <reference ref="addr" />
+    </item>
+    <item name="連棟透天厝" type="closedway" preset_name_label="true">
+      <key key="building" value="terrace" />
+      <reference ref="addr" />
+    </item>
+  </group>
+  <group name="一般商家">
+    <!--to be discussed
+    <item name="檳榔攤" type="node,closedway" preset_name_lable="true">
+      <key key="shop" value="deli" />
+      <text key="臺灣檳榔" text="name" />
+    </item>
+    -->
+    <item name="茶行" type="node,closedway" preset_name_lable="true" icon="styles/standard/shop/groceries/tea.svg">
+      <key key="shop" value="tea" />
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dtea"/>
+      <reference ref="shop" />
+    </item>
+    <item name="通訊行" type="node,closedway" preset_name_lable="true" icon="presets/mobile_phone.png">
+      <key key="shop" value="mobile_phone"/>
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dmobile_phone"/>
+      <reference ref="shop" />
+    </item>
+  </group>
+  <group name="連鎖商家" >
+    <item name="ATM" type="node" preset_name_label="true"
+      icon="styles/standard/money/atm.png">
+      <!--https://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm-->
+      <key key="amenity" value="atm" />
+      <text text="營運公司" key="operator" />
+      <combo text="存款" key="cash_in" value="yes,no" editable="false" />
+    </item>
+    <group name="便利商店"
+      icon="presets/convenience.png">
+      <item name="7-11" type="node,closedway">
+        <key key="brand" value="7-ELEVEn" />
+        <key key="operator" value="統一超商股份有限公司" />
+        <label text="新增或編輯一家 7-ELEVEn" />
+        <reference ref="convenience" />
+      </item>
+      <item name="全家便利商店" type="node,closedway">
+        <key key="brand" value="全家便利商店" />
+        <key key="operator" value="全家便利商店股份有限公司" />
+        <label text="新增或編輯一家全家便利商店" />
+        <reference ref="convenience" />
+      </item>
+      <item name="萊爾富" type="node,closedway">
+        <key key="brand" value="萊爾富" />
+        <key key="operator" value="萊爾富國際股份有限公司" />
+        <label text="新增或編輯一家萊爾富" />
+        <reference ref="convenience" />
+      </item>
+      <item name="OK·MART" type="node,closedway">
+        <key key="brand" value="OK·MART" />
+        <key key="operator" value="來來超商股份有限公司" />
+        <label text="新增或編輯一家OK·MART" />
+        <reference ref="convenience" />
+      </item>
+    </group>
+    <group name="超市"
+      icon="styles/standard/shop/supermarket.svg">
+      <item name="全聯" type="node,closedway">
+        <key key="brand" value="全聯福利中心" />
+        <key key="operator" value="全聯實業股份有限公司" />
+        <label text="新增或編輯一家全聯" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="美廉社" type="node,closedway">
+        <key key="brand" value="美廉社" />
+        <key key="operator" value="三商行股份有限公司家購事業部" />
+        <label text="新增或編輯一家美廉社" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="楓康" type="node,closedway">
+        <key key="brand" value="台灣楓康超市" />
+        <key key="operator" value="台灣楓康超市股份有限公司" />
+        <label text="新增或編輯一家楓康" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="頂好" type="node,closedway">
+        <key key="brand" value="頂好" />
+        <key key="operator" value="惠康百貨股份有限公司" />
+        <label text="新增或編輯一家頂好" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="松青超市" type="node,closedway">
+        <key key="brand" value="松青超市" />
+        <key key="operator" value="松青商業股份有限公司" />
+        <label text="新增或編輯一家松青超市" />
+        <reference ref="supermarket" />
+      </item>
+    </group>
+    <group name="加油站"
+      icon="presets/fuel.png">
+      <item name="台灣中油" typse="node,closedway">
+        <key key="brand" value="台灣中油" />
+        <key key="operator" value="台灣中油股份有限公司" />
+        <label text="新增或編輯一家台灣中油加油站" />
+        <reference ref="fuel_station" />
+      </item>
+      <item name="北基加油站" type="node,closedway">
+        <key key="brand" value="台灣中油" />
+        <key key="operator" value="北基國際股份有限公司" />
+        <label text="新增或編輯一家北基加油站" />
+        <reference ref="fuel_station" />
+      </item>
+      <item name="Smile" type="node,closedway">
+        <key key="brand" value="台灣中油" />
+        <key key="operator" value="統一精工股份有限公司" />
+        <label text="新增或編輯一家Smile加油站" />
+        <reference ref="fuel_station" />
+      </item>
+      <item name="台灣優力" type="node,closedway">
+        <key key="brand" value="台灣中油" /> <!--號稱百分百使用台灣中油油品-->
+        <key key="operator" value="台灣優力流通事業股份有限公司" />
+        <label text="新增或編輯一家台灣優力加油站" />
+        <reference ref="fuel_station" />
+      </item>
+      <separator/>
+      <item name="台亞石油" type="node,closedway">
+        <key key="brand" value="台塑石油" />
+        <key key="operator" value="台亞石油股份有限公司" />
+        <label text="新增或編輯一家台塑石油加油站" />
+        <reference ref="fuel_station" />
+      </item>
+      <item name="福懋加油站" type="node,closedway">
+        <key key="brand" value="台塑石油" /> <!--為台塑關係企業-->
+        <key key="operator" value="福懋興業股份有限公司" />
+        <label text="新增或編輯一家福懋加油站" />
+        <reference ref="fuel_station" />
+      </item>
+      <item name="西歐加油站" type="node,closedway">
+        <key key="brand" value="台塑石油" /> <!--目前供應商為台塑石油-->
+        <key key="operator" value="西歐加油站股份有限公司" />
+        <label text="新增或編輯一家西歐加油站" />
+        <reference ref="fuel_station" />
+      </item>
+    </group>
+    <group name="電信商" icon="presets/mobile_phone.png">
+      <item name="中華電信" type="node,closedway">
+        <key key="name" value="中華電信"/>
+        <key key="brand" value="中華電信"/>
+        <key key="brand:en" value="Chunghwa Telecom"/>
+        <key key="operator" value="中華電信股份有限公司"/>
+        <reference ref="tel_com" />
+      </item>
+      <item name="遠傳電信">
+        <key key="name" value="遠傳電信"/>
+        <key key="brand" value="遠傳"/>
+        <key key="brand:en" value="Far EasTone"/>
+        <key key="operator" value="遠傳電信股份有限公司"/>
+        <reference ref="tel_com" />
+      </item>
+      <item name="台湾大哥大">
+        <key key="name" value="台湾大哥大"/>
+        <key key="brand" value="台湾大哥大"/>
+        <key key="brand:en" value="Taiwan Mobile"/>
+        <key key="operator" value="台灣大哥大股份有限公司"/>
+        <reference ref="tel_com" />
+      </item>
+    </group>
+    <group name="國營事業">
+      <item name="郵局"
+        icon="styles/standard/service/post_office.png" type="node,closedway" preset_name_label="true">
+        <key key="amenity" value="post_office" />
+        <key key="operator" value="中華郵政股份有限公司" />
+      </item>
+    </group><!--not finished yet-->
+  </group>
+  <group name="自然與景觀">
+    <item name="tree" type="node" preset_name_label="true" icon="styles/standard/misc/landmark/trees.png">
+      <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=tree"/>
+      <label text="注意：請用來標示單一棵樹！不確定的請不要填寫！"/>
+      <key key="natural" value="tree" />
+      <check key="tourism" text="景點？" value_on="attraction"/>
+      <text key="name" text="名字(金城武樹)" />
+      <text key="height" text="高度(公尺、米)" />
+      <text key="circumference" text="周長(公尺、米)" />
+      <text key="name:botanical" text="學名" />
+      <text key="genus" text="屬(英文；生物學分類)" />
+      <text key="genus:zh" text="屬(中文；生物學分類)" />
+      <text key="species" text="種(英文；生物學分類)" />
+      <text key="species:zh" text="種(中文；生物學分類)" />
+      <combo key="leaf_type" text="葉種" values="broadleaved,needleleaved,leafless" />
+      <!--todo:單一棵樹沒有混生林，稍後另外製作有mixed的chunk-->
+      <combo key="leaf_cycle" text="落葉期" values="deciduous,evergreen,semi_deciduous,semi_evergreen,mixed" />
+    </item>
+  </group>
+  <group name="土地利用">
+    <item name="住宅用地" icon="styles/standard/transport/way/way_residential.svg" type="closedway" preset_name_label="true">
+      <key key="landuse" value="residential" />
+    </item>
+    <item name="自用菜園" icon="styles/standard/misc/landuse/allotments.svg" type="closedway" preset_name_label="true">
+      <key key="landuse" value="allotments" />
+    </item>
+    <item name="宗教用地" icon="styles/standard/religion.png" type="closedway" preset_name_label="true">
+      <key key="landuse" value="religious" />
+    </item>
+    <item name="工業用地" icon="styles/standard/misc/landmark/works.png" type="closedway" preset_name_label="true">
+      <key key="landuse" value="industrial" />
+    </item>
+    <item name="鐵路用地" icon="presets/rail_light.png" type="closedway" preset_name_label="true">
+      <key key="landuse" value="railway" />
+    </item>
+    <separator/>
+    <item name="農田" icon="styles/standard/misc/landuse/farmland.png" type="closedway" preset_name_label="true">
+      <key key="landuse" value="farmland" />
+    </item>
+    <item name="果園" icon="styles/standard/misc/landuse/orchard.svg" type="closedway" preset_name_label="true">
+      <key key="landuse" value="orchard" />
+    </item>
+  </group>
+  <group name="其他">
+    <item name="緊急避難處所" type="node,closedway" preset_name_label="true">
+      <link href="https://osmtw.hackpad.com/OSM-lis34MoHRDu"/>
+      <key key="emergency:amenity" value="social_facility" />
+      <key key="emergency:social_facility" value="shelter" />
+      <key key="emergency:social_facility:for" value="displaced_people" />
+      <key key="emergency:social_facility:opening_hours" value="closed " />
+      <key key="emergency" value="assembly_point" />
+      <text key="emergency:social_facility:id" text="避難所編號" />
+      <combo key="emergency:shelter_type" values="earthquake, floods, tsunami, debris flow" editable="true" text="災難類型"/>
+      <text key="emergency:operator" text="管理單位" />
+      <text key="emergency:operator:phone" text="管理單位電話" />
+      <text key="emergency:social_facility:capacity" text="容納人數" />
+      <text key="emergency:social_facility:phone" text="避難所電話" />
+      <text key="emergency:social_facility:source" text="發布" />
+      <text key="emergency:contact:phone" text="避難所聯絡人" />
+      <text key="emergency:ref" text="參考網址" />
+    </item>
+    <item name="飲水機" icon="styles/standard/food/drinking_water.png" type="node,closedway" preset_name_label="true">
+      <link href="http://beta.hackfoldr.org/drinking-water/-OSM-tag--nPGPthGklwG" />
+      <key key="amenity" value="drinking_water" />
+      <text key="name" text="Name" />
+      <text key="description" text="Description" />
+      <combo key="source" text="Source" values="survey" editable="true" />
+      <check key="indoor" text="Indoor" default="on" />
+      <text key="level" text="Level" />
+      <combo key="access" text="Access" values="yes, no, permissive, customers" />
+      <text key="opening_hours" text="Opening Hours" />
+      <space />
+      <combo key="brand" text="Brand" values="賀眾, 3M" editable="true" />
+      <text key="Operator" text="店家/管理者" />
+      <space />
+      <label text="有無提供..." />
+      <check key="drinking_water:hot_water" text="熱水" />
+      <check key="drinking_water:warm_water" text="溫水" />
+      <check key="drinking_water:cold_water" text="冷水" />
+      <check key="drinking_water:iced_water" text="冰水" />
+     </item>
+  </group>
+  <separator/>
+</presets>
