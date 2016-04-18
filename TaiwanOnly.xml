@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets
   xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
-  author="OSM.tw"
-  version="34(2016-01-11)"
+  author="http://openstreetmap.tw/"
+  version="34"
   description="Some presets only use in Taiwan region"
   zh_TW.description="一些只有臺灣才有的預設組合"
   shortdescription="Taiwan Only"
-  link="https://josm.openstreetmap.de/wiki/Presets/TaiwanOnly"
+  link="https://github.com/OsmHackTW/josm-presets"
   baselanguage="zh_TW">
 
 <!--Some notes-->
@@ -35,7 +35,7 @@
     <text key="addr:full" text="地址" />
     <label text="請填入完整中文地址，國家免填。" />
     <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
-  </chunk >
+  </chunk>
   <chunk id="addr_detail">
     <!--addr ref:
     https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D
@@ -85,22 +85,22 @@
     <space/>
     <link href="https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D" />
     <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
-  </chunk >
+  </chunk>
   <chunk id="contact">
     <text key="phone" text="電話號碼" />
     <label text="市話格式以02-3456-7890為例：+886234567890；手機格式以09-8765-4321為例：+886987654321" />
     <text key="fax" text="傳真" />
     <text key="website" text="網站" />
     <text key="email" text="Email" />
-  </chunk >
+  </chunk>
   <chunk id="wheelchair">
     <combo key="wheelchair" text="Wheelchair" values="yes,limited,no,designated" editable="false" />
     <text key="wheelchair:description:zh-tw" text="無障礙受限描述" />
-  </chunk >
+  </chunk>
   <chunk id="atm">
     <!--This one is for loactions where atm is avalible there!-->
     <combo key="atm" text="ATM" values="yes,no" editable="false" />
-  </chunk >
+  </chunk>
   <chunk id="open_hours">
     <text key="opening_hours" text="營業時間" />
   </chunk>
@@ -121,7 +121,7 @@
     <reference ref="wheelchair" />
     <reference ref="atm" />
     <reference ref="open_hours" />
-  </chunk >
+  </chunk>
   <chunk id="supermarket">
     <key key="shop" value="supermarket" />
     <text key="name" text="店名" />
@@ -129,7 +129,7 @@
     <reference ref="wheelchair" />
     <reference ref="atm" />
     <reference ref="open_hours" />
-  </chunk >
+  </chunk>
   <chunk id="fuel_station">
     <key key="amenity" value="fuel" />
     <text key="name" text="站名" />
@@ -189,7 +189,7 @@
     </item>
   </group>
   <group name="連鎖商家" >
-    <item name="ATM" type="node" preset_name_label="true"
+    <item name="ATM" type="node" preset_name_label="true" 
       icon="styles/standard/money/atm.png">
       <!--https://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm-->
       <key key="amenity" value="atm" />
@@ -265,13 +265,13 @@
         <reference ref="fuel_station" />
       </item>
       <item name="北基加油站" type="node,closedway">
-        <key key="brand" value="台灣中油" />
+        <key key="brand" value="台灣中油" /> 
         <key key="operator" value="北基國際股份有限公司" />
         <label text="新增或編輯一家北基加油站" />
         <reference ref="fuel_station" />
       </item>
       <item name="Smile" type="node,closedway">
-        <key key="brand" value="台灣中油" />
+        <key key="brand" value="台灣中油" /> 
         <key key="operator" value="統一精工股份有限公司" />
         <label text="新增或編輯一家Smile加油站" />
         <reference ref="fuel_station" />
