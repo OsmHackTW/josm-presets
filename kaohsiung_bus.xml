@@ -1,0 +1,16 @@
+<presets author="mcdlee" version="20110912">
+	<group name="Kaohsiung City Bus">
+		<item name="Bus stop" type="node">
+			<label text="Edit Bus Stop in Kaohisung" />
+			<link href="http://epage.khbus.gov.tw/files/11-1000-130-preview.php" />
+			<key key="highway" value="bus_stop" />
+			<key key="network" value="高雄市公車" />
+			<key key="operator" value="高雄市公車" />
+			<text key="name" text="Name" default="" delete_if_empty="true"/>
+			<text key="ref" text="Ref" default="" delete_if_empty="true" />
+			<combo key="shelter" text="Shelter" values="yes,no" default="" delete_if_empty="true" />
+                	<combo key="bench" text="Bench" values="yes,no" default="" delete_if_empty="true" />
+                	<combo key="tactile_paving" text="Tactile Paving" values="yes,no" default="" delete_if_empty="true" />
+		</item>
+	</group>
+</presets>

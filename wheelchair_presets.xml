@@ -1,0 +1,19 @@
+<presets author="mcdlee" version="20110911" shortdescription="to edit accessbility of wheelchair">
+    <group name="Wheelchairs" icon="http://wiki.openstreetmap.org/w/images/6/6a/Wheelchairlogo.png">
+        <item name="All properties">
+            <combo key="wheelchair" text="Wheelchair" values="yes,limited,no" delete_if_empty="true" />
+            <text key="fixme" text="FIXME" default="resurvey" />
+        </item>
+        <group name="One click">
+            <item name="Yes">
+                <key key="wheelchair" value="yes" />
+            </item>
+            <item name="Limited">
+                <key key="wheelchair" value="limited" />
+            </item>
+            <item name="No">
+                <key key="wheelchair" value="no" />
+            </item>
+        </group>
+    </group>
+</presets>

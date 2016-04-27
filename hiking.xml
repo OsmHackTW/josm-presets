@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets
+    xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+    author="mcdlee"
+    version="20130508"
+    description="Taiwan hiking tags, initialed by Kuang-che Wu"
+    shortdescription="Taiwan Hiking presets"
+    link="https://goo.gl/t1YpwC"
+    baselanguage="zh_TW">
+<group name="Hiking">
+	<group name="自然">
+		<item name="山頂" type="node">
+			<label text="新增山頂" />
+			<key key="natural" value="peak" />
+			<text key="name" text="Name" />
+			<text key="ele" text="Elevation" />
+			<text key="wikipedia" text="Wikipedia" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:natural%3Dpeak" />
+		</item>
+		<item name="碎石崩塌" type="closedway">
+			<label text="新增碎石崩塌" />
+			<key key="natural" value="scree" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:natural%3Dscree" />
+		</item>
+		<item name="瀑布" type="node">
+			<label text="新增瀑布" />
+			<key key="natural" value="waterfall" />
+			<text key="name" text="Name" />
+			<text key="height" text="Height" />
+			<text key="width" text="Width"/>
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway%3Dwaterfall" />
+		</item> 
+		<item name="溪流" type="way">
+			<label text="新增溪流" />
+			<key key="waterway" value="stream" />
+			<text key="name" text="Name" />
+			<check key="intermittent" text="Intermittent" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway%3Dstream" />
+		</item> 
+		<item name="池塘" type ="closedway,relation">
+			<label text="新增一個池塘" />
+			<key key="natural" value="water" />
+			<key key="water" value="pond" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Pond" />
+		</item>
+		<item name="鞍部" type="node">
+			<label text="新增一個鞍部" />
+			<key key="natural" value="saddle" />
+			<text key="name" text="Name" />
+			<text key="ele" text="Elevation" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:natural%3Dsaddle" />
+		</item>
+		<item name="巨石" type ="node">
+			<label text="新增一顆石頭" />
+			<key key="natural" value="stone" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:natural%3Dstone" />
+		</item>
+		<item name="陵線" type="way">
+			<label text="新增陵線" />
+			<key key="natural" value="ridge" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:natural%3Dridge" />
+		</item>
+		<item name="樹" type = "node">
+			<label text="新增一棵樹" />
+			<key key="natural" value="tree" />
+			<text key="start_date" text="Start date" />
+			<text key="height" text="Height" />
+			<text key="type" text="Type" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree" />
+		</item>
+		<item name="飲用水" type="node">
+			<label text="新增飲用水" />
+			<key key="amenity" value="drinking_water" />
+			<text key="name" text="Name" />
+			<check key="indoor" text="Indoor" />
+			<text key="description" text="Description" />
+			<text key="operator" text="Operator" />
+			<link href="http://wiki.openstreetmap.org/wiki/Drinking_Water" />
+		</item>
+	</group>
+	<group name="建築">
+		<item name="廁所" type="node,closedway">
+			<label text="新增一個廁所" />
+			<key key="amenity" value="toilets" />
+			<text key="name" text="Name" />
+			<check key="fee" text="Fee" />
+			<combo key="wheelchair" text="Wheelchair" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets" />
+		</item>
+		<item name="涼亭" type="node,closedway">
+			<label key="" text="新增一個涼亭" />
+			<key key="amenity" value="shelter" />
+			<text key="name" text="Name" />
+			<check key="bench" text="Bench" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dshelter" />
+		</item>
+		<item name="廟" type="node,closedway">
+			<label text="新增一座廟" />
+			<key key="amenity" value="place_of_worship" />
+			<text key="name" text="Name" />
+			<text key="religion" text="Religion" />
+			<text key="opening_hours" text="Opening Hours" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dplace_of_worship" />
+		</item>
+		<item name="遊客中心" type="node,closedway">
+			<label text="新增一個遊客中心" />
+			<key key="tourism" value="information" />
+			<key key="information" value="office" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dinformation" />
+		</item>
+		<item name="山莊" type="node,closedway">
+			<label text="新增一個山莊" />
+			<key key="tourism" value="alpine_hut" />
+			<text key="name" text="Name" />
+			<text key="ele" text="Elevation" />
+			<combo key="reservation" value="yes,no,required,recommended,member_only" text="Reservation" />
+			<check key="shower" text="Shower" />
+			<text key="opening_hours" text="Opening Hours" />
+			<link href="wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut" />
+		</item>
+		<item name="山屋" type="node,closedway">
+			<label text="新增一個山屋" />
+			<key key="tourism" value="wilderness_hut" />
+			<text key="name" text="Name" />
+			<text key="ele" text="Elevation" />
+			<combo key="reservation" value="yes,no,required,recommended,member_only" text="Reservation" />
+			<check key="shower" text="Shower" />
+			<text key="opening_hours" text="Opening Hours" />
+			<link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Wilderness_hut" />
+		</item>
+		<item name="小屋" type="node,closedway">
+			<label text="新增一個小屋" />
+			<key key="amenity" value="shelter" />
+			<key key="shelter_type" value="basic_hut" />
+			<text key="name" text="Name" />
+			<text key="ele" text="Elevation" />
+			<combo key="reservation" value="yes,no,required,recommended,member_only" text="Reservation" />
+			<check key="shower" text="Shower" />
+			<text key="opening_hours" text="Opening Hours" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:shelter_type%3Dbasic_hut" />
+		</item>
+		<item name="建築遺跡" type="node,way,closedway">
+			<label text="新增一個建築遺跡" />
+			<key key="building" value="yes" />
+			<key key="ruins" value="yes" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Key:ruins" />
+		</item>
+		<item name="歷史遺跡">
+			<label text="新增一個歷史遺跡" />
+			<text key="historic" text="Historic" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Key:historic" />
+		</item>
+		<item name="直升機停機坪" type="node,closedway">
+			<label text="新增一個停機坪" />
+			<key key="aeroway" value="helipad" />
+			<text key="name" text="Name" />
+			<text key="ref" text="Reference" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway%3Dhelipad" />
+		</item>
+		<item name="派出所" type="node,closedway">
+			<label text="新增一個派出所" />
+			<key key="amenity" value="police" />
+			<text key="name" text="Name" />
+			<text key="opening_hours" text="Opening Hours" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpolice" />
+		</item>
+		<item name="觀測站" type="node,closedway">
+			<label text="Add a monitoring station" />
+			<key key="man_mad" value="monitoring_station" />
+			<text key="name" text="Name" />
+			<text key="ref" text="Reference" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made%3Dmonitoring_station" />
+		</item>
+		<item name="建築">
+			<label text="新增建築物" />
+			<key key="building" value="yes" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Key:building" />
+		</item>
+	</group>
+	<group name="設施">
+		<item name="長椅" type="node">
+			<label text="新增長椅" />
+			<key key="amenity" value="bench" />
+			<check key="backrest" text="椅背" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbench" />
+		</item>
+		<item name="里程碑" type="node">
+			<label text="新增里程碑" />
+			<key key="highway" value="milestone" />
+			<text key="distance" text="Distance (km)" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dmilestone" />
+		</item>
+		<item name="地圖" type="node">
+			<label text="新增地圖" />
+			<key key="tourism" value="information" />
+			<key key="information" value="map" />
+			<check key="hiking" text="Hiking" />
+			<check key="bicyle" text="Bicycle" />
+			<text key="map_type" text="Map Type" />
+			<text key="map_size" text="Map Size" />
+			<link href="http://wiki.openstreetmap.org/wiki/Key:information" />
+		</item>
+		<item name="資訊板" type="node">
+			<label text="新增資訊板" />
+			<key key="tourism" value="information" />
+			<key key="information" value="board" />
+			<text key="board_type" text="Board Type" />
+			<link href="http://wiki.openstreetmap.org/wiki/Key:board_type" />
+		</item>
+		<item name="路標" type="node">
+			<label text="新增路標" />
+			<key key="tourism" value="information" />
+			<key key="information" value="guidepost" />
+			<check key="hiking" text="Hiking" />
+			<check key="bicyle" text="Bicycle" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost" />
+		</item>
+		<item name="基點" type="node">
+			<label text="新增基點" />
+			<key key="man_made" value="survey_point" />
+			<text key="ref" text="Reference" />
+			<text key="name" text="Name" />
+			<text key="ref" text="Reference" />
+			<text key="ele" text="Elevation" />
+			<link href="http://wiki.openstreetmap.org/wiki/Survey_point" />
+		</item>
+		<item name="路燈" type="node">
+			<label text="新增路燈" />
+			<key key="highway" value="street_lamp" />
+			<text key="ref" text="Reference" />
+			<text key="lamp_type" text="Lamp Type" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp" />
+		</item>
+		<item name="打印台" type="node">
+			<label text="新增打印台" />
+			<key key="checkpoint" value="hiking" />
+			<key key="checkpoint:type" value="stamp" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Key:checkpoint" />
+		</item>
+	</group>
+	<group name="交通">
+		<item name="登山口" type="node">
+			<label text="Add a entrance" />
+			<key key="entrance" value="yes" />
+			<text key="name" text="Name" />
+			<check key="access" text="Access" />
+			<link href="http://wiki.openstreetmap.org/wiki/Entrance" />
+		</item>
+		<group name="加油站">
+			<item name="台灣中油" typse="node, closedway">
+				<key key="amenity" value="fuel" />
+				<key key="brand" value="台灣中油" />
+				<key key="operator" value="台灣中油股份有限公司" />
+				<label text="新增或編輯一家台灣中油加油站" />
+				<text key="name" text="Name" />
+				<text key="opening_hours" text="Opening Hours" />
+				<check key="fuel:biodiesel" text="Biodiesel" default="off"/>
+				<check key="fuel:octane_92" text="Octane 92" default="off"/>
+				<check key="fuel:octane_95" text="Octane 95" default="off"/>
+				<check key="fuel:octane_98" text="Octane 98" default="off"/>
+				<text key="addr:country" text="Country" default="TW" />
+				<text key="addr:city" text="City name" />
+				<text key="addr:street" text="Street name" />
+				<text key="addr:housenumber" text="House number" />
+			</item>
+			<item name="台塑石油" types="node, closedway">
+				<key key="amenity" value="fuel" />
+				<key key="brand" value="台塑石油" />
+				<key key="operator" value="台塑石化股份有限公司" />
+				<label text="新增或編輯一家台塑石油加油站" />
+				<text key="name" text="Name" />
+				<text key="opening_hours" text="Opening Hours" />
+				<check key="fuel:diesel" text="diesel" default="off"/>
+				<check key="fuel:biodiesel" text="Biodiesel" default="off"/>
+				<check key="fuel:octane_92" text="Octane 92" default="off"/>
+				<check key="fuel:octane_95" text="Octane 95" default="off"/>
+				<check key="fuel:octane_98" text="Octane 98" default="off"/>
+				<text key="addr:country" text="Country" default="TW" />
+				<text key="addr:city" text="City name" />
+				<text key="addr:street" text="Street name" />
+				<text key="addr:housenumber" text="House number" />
+			</item>
+			<item name="台灣優力" types="node, closedway">
+				<key key="amenity" value="fuel" />
+				<key key="brand" value="台灣中油" /> <!--號稱百分百使用台灣中油油品-->
+				<key key="operator" value="台灣優力流通事業股份有限公司" />
+				<label text="新增或編輯一家台灣優力加油站" />
+				<text key="name" text="Name" />
+				<text key="opening_hours" text="Opening Hours" />
+				<check key="fuel:biodiesel" text="Biodiesel" default="off"/>
+				<check key="fuel:octane_92" text="Octane 92" default="off"/>
+				<check key="fuel:octane_95" text="Octane 95" default="off"/>
+				<check key="fuel:octane_98" text="Octane 98" default="off"/>
+				<text key="addr:country" text="Country" default="TW" />
+				<text key="addr:city" text="City name" />
+				<text key="addr:street" text="Street name" />
+				<text key="addr:housenumber" text="House number" />
+			</item>
+			<item name="西歐加油站" types="node, closedway">
+				<key key="amenity" value="fuel" />
+				<key key="brand" value="台塑石油" /> <!--目前供應商為台塑石油-->
+				<key key="operator" value="西歐加油站股份有限公司" />
+				<label text="新增或編輯一家西歐加油站" />
+				<text key="name" text="Name" />
+				<text key="opening_hours" text="Opening Hours" />
+				<check key="fuel:diesel" text="diesel" default="off"/>
+				<check key="fuel:octane_92" text="Octane 92" default="off"/>
+				<check key="fuel:octane_95" text="Octane 95" default="off"/>
+				<check key="fuel:octane_98" text="Octane 98" default="off"/>
+				<text key="addr:country" text="Country" default="TW" />
+				<text key="addr:city" text="City name" />
+				<text key="addr:street" text="Street name" />
+				<text key="addr:housenumber" text="House number" />
+			</item>
+			<item name="福懋加油站" types="node, closedway">
+				<key key="amenity" value="fuel" />
+				<key key="brand" value="台塑石油" /> <!--為台塑關係企業-->
+				<key key="operator" value="福懋興業股份有限公司" />
+				<label text="新增或編輯一家福懋加油站" />
+				<text key="name" text="Name" />
+				<text key="opening_hours" text="Opening Hours" />
+				<check key="fuel:diesel" text="diesel" default="off"/>
+				<check key="fuel:octane_92" text="Octane 92" default="off"/>
+				<check key="fuel:octane_95" text="Octane 95" default="off"/>
+				<check key="fuel:octane_98" text="Octane 98" default="off"/>
+				<text key="addr:country" text="Country" default="TW" />
+				<text key="addr:city" text="City name" />
+				<text key="addr:street" text="Street name" />
+				<text key="addr:housenumber" text="House number" />
+			</item>
+		</group>
+		<item name="停車場" type="node,closedway,relation">
+			<label text="Add a parking lot" />
+			<key key="amenity" value="parking" />
+			<check key="fee" text="Fee" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking" />
+		</item>
+		<item name="公車站牌" type="node">
+			<label text="Add a bus stop" />
+			<key key="highway" value="bus_stop" />
+			<text key="name" text="Name" />
+			<text key="network" text="Network" />
+			<text key="operator" text="Operator" />
+			<text key="ref" text="Reference" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dbus_stop" />
+		</item>
+		<item name="公車站" type="node,closedway,relation">
+			<label text="Add a bus station" />
+			<key key="public_transpot" value="station" />
+			<text key="name" text="Name" />
+			<text key="network" text="Network" />
+			<text key="operator" text="Operator" />
+			<text key="ref" text="Reference" />
+			<link href="http://wiki.openstreetmap.org/wiki/Key:public_transport" />
+		</item>
+	</group>
+	<group name="道路">
+		<group name="依鋪面">
+			<item name="有鋪面" type="way">
+				<key key="surface" value="paved" />
+				<label text="有鋪面的路" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+			</item>
+			<item name="水泥路" type="way">
+				<key key="surface" value="concrete" />
+				<label text="水泥路面" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+			</item>
+			<item name="柏油路" type="way">
+				<key key="surface" value="asphalt" />
+				<label text="柏油路面" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+			</item>
+			<item name="鵝卵石" type="way">
+				<key key="surface" value="cobblestone" />
+				<label text="鵝卵石" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+			</item>
+			<separator />
+			<item name="未鋪面" type="way">
+				<key key="surface" value="unpaved" />
+				<label text="未鋪面" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+			</item>
+			<item name="木頭" type="way">
+				<key key="surface" value="wood" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+
+			</item>
+			<item name="細石" type="way">
+				<key key="surface" value="fine_gravel" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+
+			</item>
+			<item name="有點小石" type="way">
+				<key key="surface" value="pebblestone" />
+				<label text="石頭大小約在2至8公分" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+
+			</item>
+			<item name="泥" type="way">
+				<key key="surface" value="ground" />
+				<text key="name" text="Name" />
+				<combo key="sac_scale" text="Sac Scale" value="hiking, mountain_hiking, demanding_mountain_hiking, alpine_hiking, demanding_alpine_hiking, difficult_alpine_hiking" />
+				<combo key="trail_visibility" text="Trail Visibility" value="excellent, good, intermediate, bad, horrible, no" />
+				<combo key="highway" text="Highway" value="track, road, footway, path" />
+
+			</item>
+		</group>	
+		<item name="階梯" type="way">
+			<key key="highway" value="steps" />
+			<text key="name" text="Name" />
+			<combo key="incline" text="Incline" value="up, down" />
+			<text key="step_count" text="階數" />
+			<text key="width" text="寬度" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dsteps" />
+		</item>
+		<item name="鐵梯" type="node,way">
+			<key key="highway" value="path" />
+			<text key="ladder" value="yes" text="鐵梯"/>
+			<link href="http://wiki.openstreetmap.org/wiki/Safety_measures_on_hiking_trails" />
+		</item>
+		<item name="拉繩" type="node,way">
+			<key key="highway" value="path" />
+			<combo key="ladder" value="yes" text="鐵梯"/>
+			<link href="http://wiki.openstreetmap.org/wiki/Safety_measures_on_hiking_trails" />
+		</item>
+	</group>
+	<group name="其他">
+		<item name="營地" type="node,closedway">
+			<label text="新增營地" />
+			<key key="tourism" value="camp_site" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site" />
+		</item>
+		<item name="觀景台" type="node">
+			<label text="新增觀景台" />
+			<key key="tourism" value="viewpoint" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dviewpoint" />
+		</item>
+		<item name="景點" type = "node,closedway,way,relation">
+			<label text="新增景點" />
+			<key key="tourism" value="attraction" />
+			<text key="name" text="Name" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dattraction" />
+		</item>
+		<item name="墓地" type="closedway,relation">
+			<label text="新增墓地" />
+			<key key="landuse" value="cemetery" />
+			<text key="name" text="Name" />
+			<text key="religion" text="Religion" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:landuse%3Dcemetery" />
+		</item>
+		<item name="求救點" type="node">
+			<label text="新增求救點" />
+			<key key="highway" value="emergency_access_point" />
+			<text key="ref" text="Reference" />
+			<link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Emergency_access_point" />
+		</item>
+	</group>
+</group>
+</presets>
