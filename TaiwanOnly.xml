@@ -182,7 +182,7 @@
       <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dtea"/>
       <reference ref="shop" />
     </item>
-    <item name="通訊行" type="node,closedway" preset_name_lable="true" icon="presets/mobile_phone.png">
+    <item name="通訊行" type="node,closedway" preset_name_lable="true" icon="presets/shop/mobile_phone.png">
       <key key="shop" value="mobile_phone"/>
       <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dmobile_phone"/>
       <reference ref="shop" />
@@ -190,14 +190,14 @@
   </group>
   <group name="連鎖商家" >
     <item name="ATM" type="node" preset_name_label="true" 
-      icon="presets/money/atm.png">
+      icon="presets/money/atm.svg">
       <!--https://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm-->
       <key key="amenity" value="atm" />
       <text text="營運公司" key="operator" />
       <combo text="存款" key="cash_in" value="yes,no" editable="false" />
     </item>
     <group name="便利商店"
-      icon="presets/convenience.png">
+      icon="presets/shop/convenience.png">
       <item name="7-11" type="node,closedway">
         <key key="brand" value="7-ELEVEn" />
         <key key="operator" value="統一超商股份有限公司" />
@@ -257,7 +257,7 @@
       </item>
     </group>
     <group name="加油站"
-      icon="presets/fuel.png">
+      icon="presets/vehicle/fuel.svg">
       <item name="台灣中油" typse="node,closedway">
         <key key="brand" value="台灣中油" />
         <key key="operator" value="台灣中油股份有限公司" />
@@ -302,7 +302,7 @@
         <reference ref="fuel_station" />
       </item>
     </group>
-    <group name="電信商" icon="presets/mobile_phone.png">
+    <group name="電信商" icon="presets/shop/mobile_phone.png">
       <item name="中華電信" type="node,closedway">
         <key key="name" value="中華電信"/>
         <key key="brand" value="中華電信"/>
@@ -334,7 +334,7 @@
     </group><!--not finished yet-->
   </group>
   <group name="自然與景觀">
-    <item name="tree" type="node" preset_name_label="true" icon="presets/misc/landmark/trees.png">
+    <item name="tree" type="node" preset_name_label="true" icon="presets/landmark/trees.svg">
       <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=tree"/>
       <label text="注意：請用來標示單一棵樹！不確定的請不要填寫！"/>
       <key key="natural" value="tree" />
@@ -356,23 +356,23 @@
     <item name="住宅用地" icon="presets/transport/way/way_residential.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="residential" />
     </item>
-    <item name="自用菜園" icon="presets/misc/landuse/allotments.svg" type="closedway" preset_name_label="true">
+    <item name="自用菜園" icon="presets/landuse/allotments.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="allotments" />
     </item>
-    <item name="宗教用地" icon="presets/religion.png" type="closedway" preset_name_label="true">
+    <item name="宗教用地" icon="presets/religion/religion.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="religious" />
     </item>
-    <item name="工業用地" icon="presets/misc/landmark/works.png" type="closedway" preset_name_label="true">
+    <item name="工業用地" icon="presets/landmark/works.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="industrial" />
     </item>
-    <item name="鐵路用地" icon="presets/rail_light.png" type="closedway" preset_name_label="true">
+    <item name="鐵路用地" icon="presets/landuse/rail_light.png" type="closedway" preset_name_label="true">
       <key key="landuse" value="railway" />
     </item>
     <separator/>
-    <item name="農田" icon="presets/misc/landuse/farmland.png" type="closedway" preset_name_label="true">
+    <item name="農田" icon="presets/landuse/farmland.png" type="closedway" preset_name_label="true">
       <key key="landuse" value="farmland" />
     </item>
-    <item name="果園" icon="presets/misc/landuse/orchard.svg" type="closedway" preset_name_label="true">
+    <item name="果園" icon="presets/landuse/orchard.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="orchard" />
     </item>
   </group>
