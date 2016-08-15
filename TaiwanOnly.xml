@@ -40,7 +40,7 @@
     <!--addr ref:
     https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D
     -->
-    <label text="請填入地址，有疑問請參照底部OSM Wiki連結。" icon="presets/service/post_office.png" />
+    <label text="請填入地址，有疑問請參照底部OSM Wiki連結。" icon="presets/service/post_office.svg" />
     <text key="addr:postcode" text="郵遞區號" />
     <label text="(底部有中華郵政3+2郵遞區號查詢頁面連結)" />
     <key key="addr:country" value="TW" />
@@ -80,7 +80,7 @@
     <text key="addr:door" text="室(例:307A)" />
     <text key="name" text="屋名(例:柯寓)" />
     <space/>
-    <label text="或輸入完整地址" icon="presets/service/post_office.png" />
+    <label text="或輸入完整地址" icon="presets/service/post_office.svg" />
     <text key="addr:full" text="地址" />
     <space/>
     <link href="https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D" />
@@ -182,7 +182,7 @@
       <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dtea"/>
       <reference ref="shop" />
     </item>
-    <item name="通訊行" type="node,closedway" preset_name_lable="true" icon="presets/shop/mobile_phone.png">
+    <item name="通訊行" type="node,closedway" preset_name_lable="true" icon="presets/shop/mobile_phone.svg">
       <key key="shop" value="mobile_phone"/>
       <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dmobile_phone"/>
       <reference ref="shop" />
@@ -197,7 +197,7 @@
       <combo text="存款" key="cash_in" value="yes,no" editable="false" />
     </item>
     <group name="便利商店"
-      icon="presets/shop/convenience.png">
+      icon="presets/shop/convenience.svg">
       <item name="7-11" type="node,closedway">
         <key key="brand" value="7-ELEVEn" />
         <key key="operator" value="統一超商股份有限公司" />
@@ -302,7 +302,7 @@
         <reference ref="fuel_station" />
       </item>
     </group>
-    <group name="電信商" icon="presets/shop/mobile_phone.png">
+    <group name="電信商" icon="presets/shop/mobile_phone.svg">
       <item name="中華電信" type="node,closedway">
         <key key="name" value="中華電信"/>
         <key key="brand" value="中華電信"/>
@@ -327,7 +327,7 @@
     </group>
     <group name="國營事業">
       <item name="郵局"
-        icon="presets/service/post_office.png" type="node,closedway" preset_name_label="true">
+        icon="presets/service/post_office.svg" type="node,closedway" preset_name_label="true">
         <key key="amenity" value="post_office" />
         <key key="operator" value="中華郵政股份有限公司" />
       </item>
@@ -365,11 +365,11 @@
     <item name="工業用地" icon="presets/landmark/works.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="industrial" />
     </item>
-    <item name="鐵路用地" icon="presets/landuse/rail_light.png" type="closedway" preset_name_label="true">
+    <item name="鐵路用地" icon="presets/landuse/railway.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="railway" />
     </item>
     <separator/>
-    <item name="農田" icon="presets/landuse/farmland.png" type="closedway" preset_name_label="true">
+    <item name="農田" icon="presets/landuse/farmland.svg" type="closedway" preset_name_label="true">
       <key key="landuse" value="farmland" />
     </item>
     <item name="果園" icon="presets/landuse/orchard.svg" type="closedway" preset_name_label="true">
@@ -394,7 +394,7 @@
       <text key="emergency:contact:phone" text="避難所聯絡人" />
       <text key="emergency:ref" text="參考網址" />
     </item>
-    <item name="飲水機" icon="presets/food/drinking_water.png" type="node,closedway" preset_name_label="true">
+    <item name="飲水機" icon="presets/food/drinking_water.svg" type="node,closedway" preset_name_label="true">
       <link href="http://beta.hackfoldr.org/drinking-water/-OSM-tag--nPGPthGklwG" />
       <key key="amenity" value="drinking_water" />
       <text key="name" text="Name" />
