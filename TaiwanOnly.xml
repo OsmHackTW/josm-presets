@@ -44,6 +44,7 @@
     <text key="addr:postcode" text="郵遞區號" />
     <label text="(底部有中華郵政3+2郵遞區號查詢頁面連結)" />
     <key key="addr:country" value="TW" />
+    <!-- 讓無法輸入中文的 Mac 使用者方便使用 -->
     <combo key="addr:state" text="縣、(直轄)市" values_searchable="true">
       <list_entry value="基隆市" display_value="基隆市" />
       <list_entry value="臺北市" display_value="臺北市" />
