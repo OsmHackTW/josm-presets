@@ -28,7 +28,8 @@
   <!--not finished yet-->
 
 <!--=====chunks=====-->
-  <chunk id="addr">
+  <!-- chunks commonly used -->
+  <chunk id="addr"><!-- 簡易地址 -->
     <key key="addr:country" value="TW" />
     <text key="addr:postcode" text="郵遞區號" />
     <label text="底部有中華郵政3+2郵遞區號查詢頁面連結" />
@@ -36,7 +37,7 @@
     <label text="請填入完整中文地址，國家免填。" />
     <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
   </chunk>
-  <chunk id="addr_detail">
+  <chunk id="addr_detail"><!-- 詳細地址 -->
     <!--addr ref:
     https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D
     -->
@@ -87,25 +88,25 @@
     <link href="https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D" />
     <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
   </chunk>
-  <chunk id="contact">
+  <chunk id="contact"><!-- 聯絡資訊 -->
     <text key="phone" text="電話號碼" />
     <label text="市話格式以02-3456-7890為例：+886234567890；手機格式以09-8765-4321為例：+886987654321" />
     <text key="fax" text="傳真" />
     <text key="website" text="網站" />
     <text key="email" text="Email" />
   </chunk>
-  <chunk id="wheelchair">
+  <chunk id="wheelchair"><!-- 輪椅通行狀況 -->
     <combo key="wheelchair" text="Wheelchair" values="yes,limited,no,designated" editable="false" />
     <text key="wheelchair:description:zh-tw" text="無障礙受限描述" />
   </chunk>
-  <chunk id="atm">
+  <chunk id="atm"><!-- 自動提款機 -->
     <!--This one is for loactions where atm is avalible there!-->
     <combo key="atm" text="ATM" values="yes,no" editable="false" />
   </chunk>
-  <chunk id="open_hours">
+  <chunk id="open_hours"><!-- 營業時間 -->
     <text key="opening_hours" text="營業時間" />
   </chunk>
-  <chunk id="internet">
+  <chunk id="internet"><!-- 網路使用 -->
     <!-- link:https://wiki.openstreetmap.org/wiki/Key:internet_access-->
     <combo key="internet_access" text="網路" values="yes,no,wlan,wired,terminal,service"/>
     <combo key="internet_access:fee" text="費用" values="yes,no"/>
@@ -114,8 +115,8 @@
     <text key="internet_access:operator" text="營運商"/>
   </chunk>
 
-  <!-- chunks made for particular sets -->
-  <chunk id="convenience">
+  <!-- chunks as a feature  -->
+  <chunk id="convenience"><!-- 便利商店 -->
     <key key="shop" value="convenience" />
     <text key="name" text="店名" />
     <reference ref="addr" />
@@ -123,7 +124,7 @@
     <reference ref="atm" />
     <reference ref="open_hours" />
   </chunk>
-  <chunk id="supermarket">
+  <chunk id="supermarket"><!-- 超市 -->
     <key key="shop" value="supermarket" />
     <text key="name" text="店名" />
     <reference ref="addr" />
@@ -131,7 +132,7 @@
     <reference ref="atm" />
     <reference ref="open_hours" />
   </chunk>
-  <chunk id="fuel_station">
+  <chunk id="fuel_station"><!-- 加油站 -->
     <key key="amenity" value="fuel" />
     <text key="name" text="站名" />
     <!--https://wiki.openstreetmap.org/wiki/Key:fuel-->
@@ -145,13 +146,13 @@
     <text key="opening_hours" text="Opening Hours" default="24/7" />
     <reference ref="addr" />
   </chunk>
-  <chunk id="tel_com">
+  <chunk id="tel_com"><!-- 電信公司 -->
     <key key="office" value="telecommunication"/>
     <key key="function" value="retail"/>
     <link href="https://wiki.openstreetmap.org/wiki/Tag:office%3Dtelecommunication"/>
     <reference ref="open_hours" />
   </chunk>
-  <chunk id="shop">
+  <chunk id="shop"><!-- 商店 -->
     <text text="店名" key="name"/>
     <reference ref="open_hours" />
   </chunk>
