@@ -1,5 +1,5 @@
 # josm-presets
-This is a JOSM Presets collection for Taiwan mappers.
+This is a JOSM Presets collection for mapping in Taiwan.
 
 There are 5 presets in this collection followed by:
 1. hiking_presets  
@@ -26,7 +26,7 @@ There are 5 presets in this collection followed by:
 	 * Author: osm.tw (former yellowsoar, trasfered at 2016/01/12 [1. ][1])  
 	 * License:`none`  
 	 * Intro:  
-		Made for mapping in Taiwan.  
+		An all in one presets, made for mapping in Taiwan.  
 1. Wheelchair_Presets  
 	 * First commit:2011/09/13  
 	 * Author:mcdlee  
