@@ -378,7 +378,7 @@
   </group>
   <group name="其他">
     <item name="緊急避難處所" type="node,closedway" preset_name_label="true">
-      <!-- dead link <link href="https://osmtw.hackpad.com/OSM-lis34MoHRDu"/> -->
+      <link href="https://osmtw.hackpad.tw/OSM-lis34MoHRDu"/>
       <key key="emergency:amenity" value="social_facility" />
       <key key="emergency:social_facility" value="shelter" />
       <key key="emergency:social_facility:for" value="displaced_people" />
