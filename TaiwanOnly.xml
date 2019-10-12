@@ -34,7 +34,7 @@
     <label text="底部有中華郵政3+2郵遞區號查詢頁面連結" />
     <text key="addr:full" text="地址" />
     <label text="請填入完整中文地址，國家免填。" />
-    <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
+    <link href="https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
   </chunk>
   <chunk id="addr_detail">
     <!--addr ref:
@@ -84,7 +84,7 @@
     <text key="addr:full" text="地址" />
     <space/>
     <link href="https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D" />
-    <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
+    <link href="https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
   </chunk>
   <chunk id="contact">
     <text key="phone" text="電話號碼" />
@@ -335,7 +335,7 @@
   </group>
   <group name="自然與景觀">
     <item name="tree" type="node" preset_name_label="true" icon="presets/landmark/trees.svg">
-      <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=tree"/>
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:natural=tree"/>
       <label text="注意：請用來標示單一棵樹！不確定的請不要填寫！"/>
       <key key="natural" value="tree" />
       <check key="tourism" text="景點？" value_on="attraction"/>
@@ -378,7 +378,7 @@
   </group>
   <group name="其他">
     <item name="緊急避難處所" type="node,closedway" preset_name_label="true">
-      <link href="https://osmtw.hackpad.com/OSM-lis34MoHRDu"/>
+      <!-- dead link <link href="https://osmtw.hackpad.com/OSM-lis34MoHRDu"/> -->
       <key key="emergency:amenity" value="social_facility" />
       <key key="emergency:social_facility" value="shelter" />
       <key key="emergency:social_facility:for" value="displaced_people" />
@@ -395,7 +395,7 @@
       <text key="emergency:ref" text="參考網址" />
     </item>
     <item name="飲水機" icon="presets/food/drinking_water.svg" type="node,closedway" preset_name_label="true">
-      <link href="http://beta.hackfoldr.org/drinking-water/-OSM-tag--nPGPthGklwG" />
+      <link href="https://beta.hackfoldr.org/drinking-water/-OSM-tag--nPGPthGklwG" />
       <key key="amenity" value="drinking_water" />
       <text key="name" text="Name" />
       <text key="description" text="Description" />
