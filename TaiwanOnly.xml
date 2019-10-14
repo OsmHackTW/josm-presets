@@ -249,12 +249,6 @@
         <label text="新增或編輯一家頂好" />
         <reference ref="supermarket" />
       </item>
-      <item name="松青超市" type="node,closedway">
-        <key key="brand" value="松青超市" />
-        <key key="operator" value="松青商業股份有限公司" />
-        <label text="新增或編輯一家松青超市" />
-        <reference ref="supermarket" />
-      </item>
     </group>
     <group name="加油站"
       icon="presets/vehicle/fuel.svg">
