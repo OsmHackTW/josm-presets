@@ -379,7 +379,7 @@
       <key key="emergency:social_facility:opening_hours" value="closed " />
       <key key="emergency" value="assembly_point" />
       <text key="emergency:social_facility:id" text="避難所編號" />
-      <combo key="emergency:shelter_type" values="earthquake, floods, tsunami, debris flow" editable="true" text="災難類型"/>
+      <combo key="emergency:shelter_type" values="earthquake,floods,tsunami,debris flow" editable="true" text="災難類型"/>
       <text key="emergency:operator" text="管理單位" />
       <text key="emergency:operator:phone" text="管理單位電話" />
       <text key="emergency:social_facility:capacity" text="容納人數" />
@@ -396,7 +396,7 @@
       <combo key="source" text="Source" values="survey" editable="true" />
       <check key="indoor" text="Indoor" default="on" />
       <text key="level" text="Level" />
-      <combo key="access" text="Access" values="yes, no, permissive, customers" />
+      <combo key="access" text="Access" values="yes,no,permissive,customers" />
       <text key="opening_hours" text="Opening Hours" />
       <space />
       <combo key="brand" text="Brand" values="賀眾, 3M" editable="true" />
